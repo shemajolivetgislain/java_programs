@@ -12,6 +12,7 @@ public class MortageCalculator {
         System.out.println("Enter the principle :");
         principle = scan.nextInt();
         System.out.print("enter the annual interestRate");
+
         float annualInterestRate = scan.nextFloat();
         float monthlyInterestRate = annualInterestRate/monthlyInYear/percent;
         System.out.println("period in year:");
