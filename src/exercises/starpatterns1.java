@@ -1,4 +1,4 @@
-package exercises.patterns;
+package exercises;
 
 public class starpatterns1 {
     public static void main(String[] args) {
