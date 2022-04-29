@@ -4,17 +4,23 @@ import java.util.Scanner;
 
 public class oneDimensional {
     public static void main(String[] args) {
+        getdata();
 
     }
-    public static double getdata(){
+    public static void getdata(){
         Scanner input = new Scanner(System.in);
-        double[] count = new double[];
+        int count;
+        System.out.print("print enter the count");
+        count = input.nextInt();
+        double[] num = new double[count];
         double sum = 0;
         double avg = 0;
-        System.out.print("please enter count");
-        count = input.nextInt();
-        for (int i= 0;i<= count; i++){
-        sum= sum + count[i];
+
+        for (int i= 1;i<= num.length; i++){
+            num[i]  = input.nextDouble();
+        sum= sum + num[i];
         }
+        System.out.print(sum);
+
     }
 }
