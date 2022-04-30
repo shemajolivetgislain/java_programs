@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class oneDimensional {
     public static void main(String[] args) {
-        getdata();
+        GetData();
 
     }
-    public static void getdata(){
+    public static void GetData(){
         Scanner input = new Scanner(System.in);
         int count;
         System.out.print("print enter the count");
@@ -16,11 +16,14 @@ public class oneDimensional {
         double sum = 0;
         double avg = 0;
 
-        for (int i= 1;i<= num.length; i++){
+        for (int i= 1;i< num.length; i++){
             num[i]  = input.nextDouble();
         sum= sum + num[i];
         }
+        avg = sum/ num.length;
         System.out.print(sum);
+
+        System.out.print("the average is "+ avg);
 
     }
 }
