@@ -9,13 +9,10 @@ public class exercise5 {
         System.out.println("please enter 2 numbers");
         a=input.nextDouble();
         b= input.nextDouble();
-        if (a+b == a*b){
-            System.out.println(true);
+        if (a==b){
+            System.out.println(a+b == a*b);
         }
-        else if (a/b == a-b) {
-            System.out.println(false);
-        }
-        else System.out.println("okay");
+
         return 0;
     }
 
