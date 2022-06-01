@@ -14,9 +14,9 @@ public class calculate {
             num[i] = scan.nextInt();
             System.out.println("please enter five number");
             sum += num[i];
-            average += sum/num.length;
-            System.out.println("the sum is" + sum);
-            System.out.println("the average is" + average);
+            average += sum / num.length;
+        System.out.println("the sum is" + sum);
+        System.out.println("the average is" + average);
 
         }
     }
