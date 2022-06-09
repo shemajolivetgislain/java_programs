@@ -1,6 +1,7 @@
 package assignments;
 import java.util.Scanner;
 import static assignments.addPositive.PositiveSummation;
+import static assignments.squareOfPositive.squarePositive;
 import static assignments.sumOfOdd.sumOdd;
 
 public class main {
@@ -11,5 +12,6 @@ public class main {
         size = input.nextInt();
         PositiveSummation(size);
         sumOdd(size);
+        squarePositive(size);
     }
 }
