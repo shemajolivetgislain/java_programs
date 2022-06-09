@@ -2,6 +2,9 @@ package assignments;
 
 import java.util.Scanner;
 
+//Write a short Java method that takes an integer n and returns the sum of all
+//        positive integers less than or equal to n.
+
 public class addPositive {
     public static int PositiveSummation(int size){
         int sum = 0;
