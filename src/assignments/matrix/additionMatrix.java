@@ -84,7 +84,9 @@ public class additionMatrix {
                 System.out.println("");
             }
 
-
+        }
+        else {
+            System.err.println("rows and and columns must be equal");
         }
 
 

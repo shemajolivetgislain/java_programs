@@ -9,7 +9,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Do you what to add or multiple matrix:");
         System.out.println("Press 1 for adding Matrix:");
-        System.out.println("press 2 for multiplication of Matrix:refa");
+        System.out.println("press 2 for multiplication of Matrix:");
         choice = input.nextInt();
         switch (choice){
             case 1:
@@ -19,7 +19,7 @@ public class Main {
                 MultiplicationMatrix();
                 break;
             default:
-                System.err.println("you choice doesn't doest exist");
+                System.err.println("you choice doesn't doest exist !!!!!!!!!");
         }
 
     }
