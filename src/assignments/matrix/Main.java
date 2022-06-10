@@ -8,8 +8,8 @@ public class Main {
         int choice;
         Scanner input = new Scanner(System.in);
         System.out.println("Do you what to add or multiple matrix:");
-        System.out.println("Press 1 for adding Matrix");
-        System.out.println("press 2 for multiplication of Matrix");
+        System.out.println("Press 1 for adding Matrix:");
+        System.out.println("press 2 for multiplication of Matrix:refa");
         choice = input.nextInt();
         switch (choice){
             case 1:
