@@ -12,7 +12,6 @@ public class squareOfPositive {
                 sum += Math.pow(i, 2);
             }
         }
-
         System.out.println("sum of the squares of all positive integers :" + sum);
         return 0;
     }
