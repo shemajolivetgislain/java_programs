@@ -3,6 +3,7 @@ package assignments.matrix;
 import java.util.Scanner;
 
 public class multiplicationMatrix {
+
     public static void MultiplicationMatrix() {
         Scanner input = new Scanner(System.in);
         int r1, c1, r2, c2;    //Declaration of matrix size
@@ -18,10 +19,10 @@ public class multiplicationMatrix {
         c2 = input.nextInt();
         System.out.println("\nFill in a matrix\n");
 
-        if (r1 == r2 && c1 == c2) {
+        if (r1 == c2) {
             int[][] firstMatrix = new int[r1][c1];
             int[][] secondMatrix = new int[r2][c2];
-            int[][] sumOfMatrix = new int[r1][c1];
+            int[][] product = new int[r1][c1];
 
 //            loop to input data in first matrix
             System.out.println("the items of the first matrix: ");
@@ -55,7 +56,23 @@ public class multiplicationMatrix {
                 }
                 System.out.println("");
             }
+            System.out.println("*********************************");
+            for(int i = 0; i<r1; i++){
+                for(int j = 0; j< c2; j++){
+                    for(int k = 0 ; k <c1; k++){
+                        product[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
+                    }
+                }
+            }
+            System.out.println("multiplication of first and second matrix are : ");
+            for(int i = 0; i<r1; i++)
+            {
+                for(int j = 0; j< c2; j++){
+                    System.out.print(product[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            }
 
         }
-    }
 }
