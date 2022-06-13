@@ -8,7 +8,6 @@ public class forLoop {
            {
                System.out.print(x + " ");
                x+= 2;
-
            }
             System.out.println("");
         }
