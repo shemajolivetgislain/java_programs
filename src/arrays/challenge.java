@@ -1,21 +1,28 @@
 package arrays;
 
 public class challenge {
-   
+  
         public static void main(String[] args) {
-      
-          int rows = 5;
+          
+          int weeks = 3;
+          int days = 7;
       
           // outer loop
-          for (int i = 1; i <= rows; ++i) {
+          for(int i = 1; i <= weeks; ++i) {
+            System.out.println("Week: " + i);
       
-            // inner loop to print the numbers
-            for (int j = 1; j <= i; ++j) {
-              System.out.print(j + " ");
+            // inner loop
+            for(int j = 1; j <= days; ++j) {
+              
+              // break inside the inner loop
+              if(i == 2) {
+                break;
+              }
+              System.out.println("  Days: " + j);
             }
-            System.out.println("");
           }
         }
       }
+      
     
 
